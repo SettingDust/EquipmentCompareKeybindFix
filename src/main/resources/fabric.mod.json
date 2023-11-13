@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "equipmentcomparekeybindfix",
+  "version": "${version}",
+  "name": "EquipmentCompareKeybindFix",
+  "description": "",
+  "authors": [],
+  "contact": {
+    "repo": "https://github.com/settingdust/EquipmentCompareKeybindFix"
+  },
+  "license": "MIT",
+  "icon": "assets/equipmentcomparekeybindfix/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "settingdust.equipmentcomparekeybindfix.client.EquipmentCompareKeybindFixClient"
+    ],
+    "main": [
+      "settingdust.equipmentcomparekeybindfix.EquipmentCompareKeybindFix"
+    ]
+  },
+  "mixins": [
+    "equipmentcomparekeybindfix.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "minecraft": "${minecraft_version}"
+  }
+}
